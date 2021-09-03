@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@200;400;600&diplay=swap");
+*{box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+#container{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+}
+ /* stylisation de la  classe cree en js */
+.toast{
+   
+    padding: 1rem;
+    background-color: blueviolet;
+    color: white;
+   
+}

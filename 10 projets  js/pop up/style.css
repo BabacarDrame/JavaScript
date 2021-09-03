@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@200;400;600&diplay=swap");
+*{box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    min-height: 100vh;
+   
+}
+.popup_container{
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.1);
+    display: none; /* on desactive le  pop par defaut */ 
+    align-items: center;
+    justify-content: center;
+}
+ 
+.popup_container.active{
+    display: flex;  /* aprés click on active */
+}
+   /* stylisation du pop up  */
+.popup{
+    position: relative;
+    background-color:white;
+   padding: 20px;
+   border-radius: 10px 10px ;
+    box-shadow: 2px 2px 10px 10px  rgba(0,0,0,0.3);
+    width: 500px;
+}
+ /* formatage de  l'ensemble des  button */
+button{
+    background-color:tomato;
+    padding: 0.5rem;
+    
+}
+   /* formatage du button pop up  */
+.popup button{
+    position: absolute;
+    top: 10;
+    right: 10;
+    background-color:tomato;
+    padding: 0.5rem;
+    
+}

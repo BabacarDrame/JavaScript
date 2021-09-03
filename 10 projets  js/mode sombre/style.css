@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@200;400;600&diplay=swap");
+*{box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    min-height: 100vh;
+   padding: 5rem;
+   flex-direction: column;
+   text-align: center;
+}
+   /* stlisation de la classe créé avec javascript */
+.dark{
+    transition:0.5s linear;
+    background-color: #1f1f1f;
+    color: white;
+}
+ /* on transforme le label en cercle */
+label{
+    background-color: rebeccapurple;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    user-select: none ;
+    display: inline-block;
+   
+}
+ /* on change la couleur du label (le petit cercle en haut de la page html) apres click  */
+.dark label{
+    background-color: white;
+}
+  /* formatage de la div contenant le label et le checkbox */
+.container{
+    position: fixed;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+  /* on masque l'icone du checkbox */
+input{
+    visibility: hidden;
+}
