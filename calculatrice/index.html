@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculatrice1.css">
+    <script src="js/calculatrice.js"></script>
+    <title>Calculatrice</title>
+
+</head>
+
+<body>
+    <center>
+        <div class="container">
+
+            <form action="" name="form">
+
+                <table class="button">
+                    <tr>
+                        <div class="input">
+                            <input type="text" name="inputresult" placeholder="0">
+                        </div>
+                    </tr>
+                    <tr>
+                        <td> <input type="button" class="operateur" name="plus" value="+" onClick="resultat('+')"></td>
+                        <td> <input type="button" class="operateur" name="-" value="-" onclick="resultat('-')"></td>
+                        <td> <input type="button" class="operateur" value="x" onclick="resultat('*')"></td>
+                        <td> <input type="button" class="operateur" value="÷" id="division" onclick="resultat('/')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="button" value="7" onclick="resultat(7)"></td>
+                        <td> <input type="button" value="8" onclick="resultat(8)"></td>
+                        <td> <input type="button" value="9" onclick="resultat(9)"></td>
+                        <td rowspan="5"><input type="button" value="=" id="egal"
+                        onclick="form.inputresult.value=eval(form.inputresult.value);" ></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="button" value="4" onclick="resultat(4)"></td>
+                        <td> <input type="button" value="5" onclick="resultat(5)"></td>
+                        <td> <input type="button" value="6" onclick="resultat(6)"></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="button" value="1" onclick="resultat(1)"></td>
+                        <td> <input type="button" value="2" onclick="resultat(2)"></td>
+                        <td> <input type="button" value="3" onclick="resultat(3)"></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="button" value="0" onclick="resultat(0)"></td>
+                        <td> <input type="button" value="." id="point" onclick="resultat('.')"></td>
+                        <td> <input type="button" value="AC" id="AC" onclick="effacer()"></td>
+                    </tr>
+                </table>
+        </div>
+
+        </form>
+
+
+        </div>
+    </center>
+</body>
+
+</html>
